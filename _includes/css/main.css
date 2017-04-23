@@ -179,7 +179,6 @@ nav ul li:hover, nav ul li.active {
     padding-top: 140px;
 }
 
-
 #footer {
   padding: 8px 0;
   min-height:0;
@@ -239,7 +238,6 @@ nav ul li:hover, nav ul li.active {
 .sectiondivider.imaged {
   text-shadow: 1px 1px 3px #333;
 }
-
 
 .columned {
   -webkit-column-count: 3;
