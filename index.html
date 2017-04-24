@@ -43,7 +43,9 @@
           <h5 class="icon-title">{{ page.title }}</h5>
         </div>
         {% endif %}
-        <div class="container {{ page.style }}">
+
+        <!-- Remove con from here -->
+        <div class="{{ page.style }}">
           {{ page.content }}
         </div>
       </div>
@@ -51,14 +53,14 @@
 
 
     <div id="footer" class="section text-white">
-      <div class="container">
+      <div class="con">
         {% capture foottext %} {% include footer.md %} {% endcapture %}
         {{ foottext | markdownify }}
       </div>
     </div>
   </div>
 
-{% include analytics.html %}
+
 </body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="site.js"></script>
