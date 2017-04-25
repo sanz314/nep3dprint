@@ -70,8 +70,23 @@
 .info-display {
 	color:black;
 	font-size:1.3em;
-
-
 }
 
+.contact-help {
+	color:yellow;
+	font-size:100px;
+}
 
+.contact-text {
+	margin-top:-40px;
+}
+
+.btn-log {
+margin-top:-40px;
+background-color:#D2B48C;
+color:#000000;
+}
+
+.btn-log:hover {
+background-color:#B89D7A;
+}
