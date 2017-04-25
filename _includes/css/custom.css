@@ -2,3 +2,76 @@
  font-size:	14px;
  font-style: italic;
 }
+
+.help-question {
+	color:yellow;
+	font-size:300px;
+	margin-top:-65px;
+}
+
+.need-help{
+	margin-top:-120px;
+	font-size:20px;
+	margin-left:-500px;
+	padding:0px;
+}
+
+.instruct-contact {
+	margin-left:-100px;
+	margin-top: 60px;
+}
+
+.help-text-pos {
+	margin-left:-230px;
+}
+
+.main-row-pos {
+	margin-left: -100px;
+}
+
+.pos-main-help {
+	margin-left:100px;
+}
+
+.pos-main-text {
+	margin-top: -100px;
+	margin-left: 10px;
+	font-size: 24px;
+}
+
+.need-help {
+	margin-top: -115px;
+	margin-left: 45px;
+}
+
+.help-question-small{
+	color:yellow;
+	font-size:200px;
+	margin-top:-65px;
+}
+
+.pos-main-help-small {
+	margin-left:10px;
+
+}
+
+.need-help-small {
+	margin-top: -65px;
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+.pos-main-text-small {
+	margin-top: -100px;
+	margin-left: -5px;
+	font-size: 20px;
+}
+
+.info-display {
+	color:black;
+	font-size:1.3em;
+
+
+}
+
+
