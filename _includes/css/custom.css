@@ -82,11 +82,34 @@
 }
 
 .btn-log {
-margin-top:-40px;
-background-color:#D2B48C;
-color:#000000;
+	margin-top:-40px;
+	background-color:#D2B48C;
+	color:#000000;
 }
 
 .btn-log:hover {
-background-color:#B89D7A;
+	background-color:#B89D7A;
+}
+
+.img-margin {
+	margin-bottom:30px;
+}
+
+.phone-no {
+	font-size:3em;
+	color:black;
+}
+
+.contact-email {
+	font-size:2em;
+	color:black;
+
+}
+
+.phone-group {
+	background-color: rgba(25, 25, 25, .5);
+}
+
+.email-group {
+	background-color: rgba(193, 66, 66, 0.3)
 }
