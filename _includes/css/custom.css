@@ -103,7 +103,6 @@
 .contact-email {
 	font-size:2em;
 	color:black;
-
 }
 
 .phone-group {
@@ -117,3 +116,26 @@
 .social-icon {
 	font-size:50px;
 }
+
+.nav-social-icon {
+	font-size: 40px;
+	color: white;
+}
+
+.link3d {
+
+}
+
+.link3d ul li {
+	display: inline-block;
+	font-size: 50px;
+	margin-left: 18px;
+	margin-bottom:40px;
+}
+
+.get3dinfo p {
+	font-size:20px;
+	margin-bottom:50px;
+
+}
+
