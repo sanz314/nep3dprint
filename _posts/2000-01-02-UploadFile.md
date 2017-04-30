@@ -38,7 +38,7 @@ fa-icon: cloud-upload
         <label for="Email" class="col-sm-3 control-label"> Email</label>
         <div class="col-sm-9">
           <input type="email" class="form-control" id="MobileNo" name="Email:"  data-validation="email" >
-          <span class="help-text">Your email address. e.g. nep3dprint@gmail.com</span>
+          <span class="help-text">Your email address. e.g. mauri3dprint@gmail.com</span>
         </div>
       </div>
     </div>
@@ -119,7 +119,7 @@ fa-icon: cloud-upload
   });
 
    function formSub() {
-      window.open("/toupload.html", "MsgWindow", "scrollbars=yes,resizable=yes,top=180,left=200,width=600,height=600");
+      window.open("/toupload.html","_blank", "scrollbars=yes, menubar=yes, resizable=yes,top=180,left=250,width=700,height=600");
   }
 </script>
 
