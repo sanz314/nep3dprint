@@ -1,9 +1,10 @@
 ---
 title: "Upload File"
-bg: blue
+bg: black
 color: white
-fa-icon: check-square-o
+fa-icon: cloud-upload
 ---
+
 <div class="container">
   <div class="row">
     <div class="col-md-6">
@@ -53,6 +54,7 @@ fa-icon: check-square-o
       <ul class="info-display">
         <li>Step 1: Fill up the form and click proceed.</li>
         <li>Step 2: Upload dialogue box will open.</li>
+        <li> Step 3: Click Next. Dropbox file sharing service will open.</li>
         <li>Step 3: Upload File in our Dropbox. We accept only <strong>.STL</strong> and <strong>.OBJ</strong> file format.</li>
         <li>Step 4: You'll be contacted shortly with model details and pricing.</li>
       </ul>
@@ -105,8 +107,6 @@ fa-icon: check-square-o
       </table>
     </div> 
   </div>
- 
-  <a href="//:0"  onclick="formSub()">Print</a>
 </div>
 
 <script>

@@ -1,5 +1,5 @@
 .help-text {
- font-size:	15px;
+ font-size:	18px;
  font-style: italic;
 }
 
@@ -68,12 +68,12 @@
 }
 
 .info-display {
-	color:black;
-	font-size:1.3em;
+	color:#C784ED;
+	font-size:1.4em;
 }
 
 .contact-help {
-	color:yellow;
+	color:white;
 	font-size:100px;
 }
 
@@ -96,13 +96,15 @@
 }
 
 .phone-no {
-	font-size:3em;
-	color:black;
+	font-size:2em;
+	color:white;
+	margin-left:100px;
 }
 
 .contact-email {
 	font-size:2em;
-	color:black;
+	color:white
+	
 }
 
 .phone-group {
@@ -118,7 +120,7 @@
 }
 
 .nav-social-icon {
-	font-size: 40px;
+	font-size: 30px;
 	color: white;
 }
 
@@ -137,5 +139,30 @@
 	font-size:20px;
 	margin-bottom:50px;
 
+}
+
+.nav-twitter {
+	margin-left:-110px;
+
+}
+
+.check{
+ 	table-layout:auto;
+}
+
+ @media screen and (max-width: 480px) {
+ 	.contact-email {
+ 		font-size:1.5em;
+ 	}
+
+ 	.phone-no {
+ 		font-size:1.5em;
+ 	}
+    
+  }
+
+.form-error {
+	color:red !important;
+	font-size:18px;
 }
 
