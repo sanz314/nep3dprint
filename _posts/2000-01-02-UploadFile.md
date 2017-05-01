@@ -109,18 +109,58 @@ fa-icon: cloud-upload
   </div>
 </div>
 
+<!-- Bootstrap model to proceed for file upload -->
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" id="proceed-modal" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+          <button type="button" id="osam">osam</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
+  
   $.validate({
     form : "#file-submit",
     onSuccess : function($form) {
-        formSub();
-      return True; // 
-    }
+      //$('#proceed-modal').trigger('click');
+    if ($modal_status) {
+       $modal_status=false;
+       return true;
+       //stop form from submit
+      } else {
+        $('#proceed-modal').trigger('click');
+        return false;
+     } 
+   }
   });
 
-   function formSub() {
-      window.open("/toupload.html","_blank", "scrollbars=yes, menubar=yes, resizable=yes,top=180,left=250,width=700,height=600");
-  }
+  $( function () {
+    $modal_status=false;
+    $('#osam').click( function () {
+      $modal_status = true;
+      $('.close').trigger('click');
+      $('#proceed').trigger('click')
+    });
+  });
+
 </script>
 
 
