@@ -111,35 +111,44 @@ fa-icon: cloud-upload
 
 <!-- Bootstrap model to proceed for file upload -->
 {% include msgmodal.html 
-        id="'proceed-modal'" 
+        openmodelid="'proceed-modal'" 
         targetid="'#upload-modal'"  
         modalid="'upload-modal'" 
         msg="Thank you, we've received your details please click next to upload file. You'll be redirect to dropbox for upload. We'll contact you shortly once the file has been analyzed by us." 
-        next-modal="'uploadnext'"%}
+        modal_body_btn="'uploadnext'"
+        btn_name= "Next>>"
+        %}
 
 <script>
-  $.validate({
-    form : "#file-submit",
-    onSuccess : function($form) {
-    if ($modal_status) {
-       $modal_status=false;
-       return true;
-       //stop form from submit
-      } else {
-        $('#proceed-modal').trigger('click');
-        return false;
-     } 
-   }
-  });
 
-  $( function () {
-    $modal_status=false;
-    $('#uploadnext').click( function () {
+  function fileSubmit(formname,openmodal, modal_body_btn, main_form_submit) 
+  {
+      $modal_status=false;
+       $.validate({
+      form : formname,
+      onSuccess : function($form) {
+      if ($modal_status) {
+         $modal_status=false;
+         return true;
+         //stop form from submit
+        } else {
+          //alert(openmodal);
+          $(openmodal).trigger('click');
+          return false;
+       } 
+     }
+  });
+    $(modal_body_btn).click( function () {
       $modal_status = true;
       $('.close').trigger('click');
-      $('#proceed').trigger('click')
-    });
-  });
+      $(main_form_submit).trigger('click')
+    });             
+  }
+
+  fileSubmit("#file-submit","#proceed-modal", "#uploadnext", "#proceed");
+
+
+
 </script>
 
 
