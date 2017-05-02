@@ -9,8 +9,8 @@ fa-icon: cloud-upload
   <div class="row">
     <div class="col-md-6">
       <form action="https://getsimpleform.com/messages?form_api_token=f21c9f6d668564eb6d853a65cf8c1e77" method="post" class="form-horizontal" id="file-submit">
-        <!-- the redirect_to is optional, the form will redirect to the referrer on submission 
-        <input type='hidden' name='redirect_to' value='https://www.dropbox.com/request/7lG33UjGl1Vb4fWtSqE9'/> -->
+        <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+        <input type='hidden' name='redirect_to' value='https://www.dropbox.com/request/7lG33UjGl1Vb4fWtSqE9'/> 
           <div class="row">
             <div class="form-group form-group-lg">
               <label for="FullName" class="col-sm-3 control-label">
@@ -110,37 +110,17 @@ fa-icon: cloud-upload
 </div>
 
 <!-- Bootstrap model to proceed for file upload -->
-<div class="container">
-  <h2>Modal Example</h2>
-  <!-- Trigger the modal with a button -->
-  <button type="button" id="proceed-modal" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-          <button type="button" id="osam">osam</button>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{% include msgmodal.html 
+        id="'proceed-modal'" 
+        targetid="'#upload-modal'"  
+        modalid="'upload-modal'" 
+        msg="Thank you, we've received your details please click next to upload file. You'll be redirect to dropbox for upload. We'll contact you shortly once the file has been analyzed by us." 
+        next-modal="'uploadnext'"%}
 
 <script>
-  
   $.validate({
     form : "#file-submit",
     onSuccess : function($form) {
-      //$('#proceed-modal').trigger('click');
     if ($modal_status) {
        $modal_status=false;
        return true;
@@ -154,13 +134,12 @@ fa-icon: cloud-upload
 
   $( function () {
     $modal_status=false;
-    $('#osam').click( function () {
+    $('#uploadnext').click( function () {
       $modal_status = true;
       $('.close').trigger('click');
       $('#proceed').trigger('click')
     });
   });
-
 </script>
 
 
